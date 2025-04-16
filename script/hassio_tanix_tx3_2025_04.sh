@@ -91,7 +91,7 @@ install_dependences() {
   
   apt-get update
   
-  apt install \
+  apt --fix-broken  install \
   jq \
   wget \
   curl \
@@ -105,7 +105,8 @@ install_dependences() {
   cifs-utils -y \
   smbclient -y \
   systemd-timesyncd -y \
-  systemd-resolved -y
+  systemd-resolved -y \
+  bluez -y
 }
 
 # ------------------------------------------------------------------------------
