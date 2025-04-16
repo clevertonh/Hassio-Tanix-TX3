@@ -104,7 +104,7 @@ install_dependences() {
   systemd-journal-remote -y \
   cifs-utils -y \
   smbclient -y
-  systemd-resolved -y
+#  systemd-resolved -y
 }
 
 # ------------------------------------------------------------------------------
